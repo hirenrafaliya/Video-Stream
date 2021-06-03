@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBlack"
+    tools:context=".MyDownloadActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressLayout"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ProgressWhite"
+            android:id="@+id/progressbar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressbar"
+            android:textColor="@color/colorPrimaryWhite"
+            android:text="Loading..."
+            android:textSize="14dp"
+            android:id="@+id/txtStatus"
+            android:fontFamily="@font/sf_medium"
+            android:layout_marginTop="4dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorSecondaryBlack"
+        android:id="@+id/titleBarLayout">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="4dp"
+            android:id="@+id/imgBack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Downloads"
+            android:layout_toRightOf="@+id/imgBack"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDownload"
+            />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="@color/colorSecondaryBlack"
+        app:cardCornerRadius="@dimen/button_radius"
+        android:layout_marginTop="12dp"
+        android:id="@+id/cardSearchParent"
+        android:layout_below="@+id/titleBarLayout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/imgSearch"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgSearch"
+                android:layout_marginLeft="18dp"
+                android:hint="Search for videos..."
+                android:textColorHint="@color/colorSecondaryGrey"
+                android:textSize="16dp"
+                android:textColor="@color/colorSecondaryWhite"
+                android:inputType="text"
+                android:fontFamily="@font/sf_medium"
+                android:background="@color/colorSecondaryBlack"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtSearch"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardSearchParent"
+        android:layout_marginTop="4dp"
+        android:id="@+id/recyclerRefreshLayout"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

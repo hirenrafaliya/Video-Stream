@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parentDialogCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        app:cardBackgroundColor="@color/colorSecondaryBlack"
+        app:cardCornerRadius="@dimen/button_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:id="@+id/txtDialogTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_medium"
+                android:paddingLeft="12dp"
+                android:text="Delete this video"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/txtDialogDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDialogTitle"
+                android:fontFamily="@font/sf_regular"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="12dp"
+                android:text="Are you sure you want to Delete ?"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDialogDescription"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                >
+
+                <Button
+                    android:id="@+id/btnDialogNegative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_primary_grey"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Cancel"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorSecondaryWhite"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/btnDialogPositive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:layout_toRightOf="@id/btnDialogNegative"
+                    android:background="@drawable/bg_button_primary_blue"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

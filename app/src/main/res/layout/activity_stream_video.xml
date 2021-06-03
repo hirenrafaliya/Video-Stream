@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBlack"
+    tools:context=".StreamVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/exoParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/exoPlayerView"
+            app:show_buffering="always"
+            app:use_sensor_rotation="true"
+            android:theme="@style/ProgressWhite"
+            app:buffered_color="@color/colorPrimaryWhite"
+            app:controller_layout_id="@layout/exo_playback_control_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title of Video"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textSize="18dp"
+        android:layout_below="@+id/exoParentLayout"
+        android:fontFamily="@font/sf_medium"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/txtTitle"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTitle">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Algebra includes the study of algebric structure which are sets and operations defined by these sets satisfying certain anxioms"
+            android:textColor="@color/colorSecondaryWhite"
+            android:textSize="16dp"
+            android:fontFamily="@font/sf_regular"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/txtDescription"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescription"
+            android:textColor="@color/colorPrimaryGrey"
+            android:textSize="14dp"
+            android:fontFamily="@font/sf_regular"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/txtDetail"
+            />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

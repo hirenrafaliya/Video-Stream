@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_secondary_black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/parentLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : Not Available"
+            android:textSize="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_account_circle_white_24dp"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : Not Available"
+            android:textSize="16dp"
+            android:layout_below="@+id/txtName"
+            android:drawableLeft="@drawable/ic_email_white_24dp"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtEmail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number : Not Available"
+            android:layout_below="@+id/txtEmail"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_local_phone_white_24dp"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtNumber"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Package : Not Available"
+            android:layout_below="@+id/txtNumber"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_attach_money_white_24dp"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtPlan"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status : Not Available"
+            android:layout_below="@+id/txtPlan"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtStatus"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "252202322453",
+    "firebase_url": "https://video-stream-37af2.firebaseio.com",
+    "project_id": "video-stream-37af2",
+    "storage_bucket": "video-stream-37af2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252202322453:android:d58793b4f949c1a55e1c1c",
+        "android_client_info": {
+          "package_name": "com.app.videostream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252202322453-bs1g4aatcdtb3tupjct1b7fp6ud44jso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzjYplNEgeW_bPfXE6YUPjzUYBgmxtW70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252202322453-bs1g4aatcdtb3tupjct1b7fp6ud44jso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

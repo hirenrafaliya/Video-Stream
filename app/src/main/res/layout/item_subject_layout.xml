@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDisplayParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSelect"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/colorSecondaryBlack"
+        app:cardCornerRadius="@dimen/button_radius">
+
+
+        <RelativeLayout
+            android:id="@+id/displayParent"
+            android:background="@drawable/bg_button_secondary_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDisplay"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="@dimen/button_radius">
+
+                <ImageView
+                    android:id="@+id/imgDisplay"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorSecondaryGrey" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/cardDisplay"
+                android:fontFamily="@font/sf_medium"
+                android:text="Title Of Subjects"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/cardDisplay"
+                android:fontFamily="@font/sf_regular"
+                android:text="Description of Subjects"
+                android:textColor="@color/colorSecondaryWhite"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDescription"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/sf_medium"
+                android:text="12 Videos"
+                android:textColor="@color/colorPrimaryBlue"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBlack"
+    tools:context=".SubjectActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressLayout"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ProgressWhite"
+            android:id="@+id/progressbar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressbar"
+            android:textColor="@color/colorPrimaryWhite"
+            android:text="Loading..."
+            android:textSize="14dp"
+            android:id="@+id/txtStatus"
+            android:fontFamily="@font/sf_medium"
+            android:layout_marginTop="4dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorSecondaryBlack"
+        android:id="@+id/titleBarLayout">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgProfile"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            app:cardCornerRadius="35dp"
+            android:src="@drawable/bg_button_primary_blue"
+            app:cardBackgroundColor="@color/colorSecondaryBlack"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_logo"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome..."
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtWelcome"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/imgDownload"
+            android:src="@drawable/ic_help_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:id="@+id/imgHelp"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/imgOption"
+            android:src="@drawable/ic_file_download_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:id="@+id/imgDownload"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_option"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:id="@+id/imgOption"
+            />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="@color/colorSecondaryBlack"
+        app:cardCornerRadius="@dimen/button_radius"
+        android:layout_marginTop="12dp"
+        android:id="@+id/cardSearchParent"
+        android:layout_below="@+id/titleBarLayout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/imgSearch"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgSearch"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/colorSecondaryWhite"
+                android:hint="Search for subjects..."
+                android:textColorHint="@color/colorSecondaryGrey"
+                android:textSize="16dp"
+                android:inputType="text"
+                android:fontFamily="@font/sf_medium"
+                android:background="@color/colorSecondaryBlack"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtSearch"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardSearchParent"
+        android:layout_marginTop="4dp"
+        android:id="@+id/recyclerRefreshLayout"
+        >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="22dp"
+        android:src="@drawable/ic_file_upload_black_24dp"
+        android:visibility="invisible"
+        android:id="@+id/btnUpload"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryBlack"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorSecondaryBlack"
+        android:padding="12dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textAlignment="center"
+            android:layout_margin="4dp"
+            android:text="User Info"
+            android:textSize="22dp"
+            android:fontFamily="@font/sf_bold"
+            android:id="@+id/txtDialogTitle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogTitle"
+            android:text="Payment ID : Not available"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogId"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogId"
+            android:text="Name : Not available"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogName"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogName"
+            android:text="Email : Not available"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogEmail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogEmail"
+            android:text="Number : Not available"
+            android:textAlignment="center"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogNumber"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogNumber"
+            android:text="Package : Not available"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogPlan"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogPlan"
+            android:text="Amount : Not available"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogAmount"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogAmount"
+            android:layout_margin="2dp"
+            android:text="Started On : Not available"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogStarted"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="2dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogStarted"
+            android:text="Expires On : Not available"
+            android:textAlignment="center"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogExpire"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtDialogExpire"
+            android:background="@drawable/bg_button_primary_blue"
+            android:fontFamily="@font/sf_medium"
+            android:layout_margin="8dp"
+            android:id="@+id/btnDialogContinue"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_secondary_black"
+        android:padding="18dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Packages"
+            android:layout_below="@+id/txtTitle"
+            android:textSize="18dp"
+            android:layout_margin="6dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtAll"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp"
+            android:text="Free Package"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtAll"
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtFree"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Basic Package"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/txtFree"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtBasic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"
+            android:text="Standard Package"
+            android:layout_below="@+id/txtBasic"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+
+            android:textColor="@color/colorPrimaryWhite"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtStandard"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

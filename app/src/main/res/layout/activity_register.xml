@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBlack"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo"
+        android:id="@+id/imgLogo"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parentCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="@color/colorPrimaryBlue"
+        app:cardCornerRadius="@dimen/button_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_button_primary_white"
+                android:fontFamily="@font/sf_medium"
+                android:hint="Email"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="8dp"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryBlack"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtEmail"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="8dp"
+                android:background="@drawable/bg_button_primary_white"
+                android:fontFamily="@font/sf_medium"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryBlack"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtPassword"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_button_secondary_black">
+
+                <TextView
+                    android:id="@+id/txtRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sf_medium"
+                    android:padding="12dp"
+                    android:text="Register"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="16dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txtRegister"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:theme="@style/ProgressWhite"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRegister"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/sf_medium"
+                android:text="Already have an account ? Login"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryBlack"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
